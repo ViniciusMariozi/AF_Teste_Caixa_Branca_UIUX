@@ -20,3 +20,12 @@
 ## Grafo de Fluxo
 
 ![Grafo de Fluxo](imagens/GrafoFluxo.drawio.png)
+
+## Caminhos Básicos
+
+* **Caminho 1:** `1 -> 2 -> 3 -> 4 -> 5 -> 9 -> 10`
+* **Caminho 2:** `1 -> 2 -> 4 -> 5 -> 9 -> 10`
+* **Caminho 3:** `1 -> 2 -> 4 -> 5 -> 6 -> 8 -> 10`
+* **Caminho 4:** `1 -> 2 -> 4 -> 5 -> 6 -> 7 -> 8 -> 10`
+* **Caminho 5:** `1 -> 2 -> 4 -> 5 -> 6 -> 9 -> 10`
+* **Caminho 6:** `1 -> 2 -> 4 -> 5 -> 6 -> 7 -> 9 -> 10`
