@@ -6,32 +6,54 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class User {
-    public Connection conectarBD(){
-        Connection conn = null;
+        
+        // Nó 1 (Início)
+        Connection conn = null; 
+        
+        // Nó 2 (Try-Conectar)
         try{
             Class.forName("com.mysql.Driver.Manager").newInstance();
             String url = "jdbc:mysql://127.0.0.1/test?user=lopes&password=123";
             conn = DriverManager.getConnection(url);
-        }catch (Exception e) {}
+        
+        // Nó 3 (Catch-Conectar)
+        }catch (Exception e) {} 
+        
         return conn;
     }
+    
     public String nome="";
     public boolean result = false;
+    
     public boolean verificarUsuario(String login, String senha) {
+        
+        // Nó 4 (SQL-Build)
         String sql = "";
-        Connection conn = conectarBD();
+        Connection conn = conectarBD(); // A chamada em si é parte do Nó 4
         //INSTRUÇÃO SQL
         sql = "select nome from usuarios ";
         sql += "where login = '" + login + "'";
         sql += " and senha = '" + senha + "';";
+        
+        // Nó 5 (Try-Verificar)
         try{
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(sql);
+            
+            // Nó 6 (Decisão IF)
             if(rs.next()) {
+                
+                // Nó 7 (Bloco IF)
                 result = true;
                 nome = rs.getString("nome");
-            }
-        }catch (Exception e) {}
+            
+            // Nó 8 (Junção IF) - Ponto lógico de saída do IF
+            } 
+        
+        // Nó 9 (Catch-Verificar)
+        }catch (Exception e) {} 
+        
+        // Nó 10 (Fim)
         return result;
     }
 }//fim da class
