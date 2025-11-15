@@ -17,4 +17,4 @@
 
 **R: A complexidade ciclomática é 6.**
 
-![Grafo de Fluxo](imagens/Grafo de Fluxo.drawio.png)
+![Grafo de Fluxo](imagens/GrafoFluxo.drawio.png)
