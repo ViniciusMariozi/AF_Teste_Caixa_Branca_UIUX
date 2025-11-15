@@ -4,8 +4,8 @@
 
 **Fórmula:** `M = E - N + 2P`, onde:
 
-* **N (Nós):** 10
 * **E (Arestas):** 14
+* **N (Nós):** 10
 * **P (Componentes):** 1
 
 **Cálculo:**
