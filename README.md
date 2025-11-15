@@ -16,3 +16,5 @@
 > M = 6
 
 **R: A complexidade ciclomática é 6.**
+
+![Grafo de Fluxo](imagens/Grafo de Fluxo.drawio.png)
