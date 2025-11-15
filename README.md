@@ -1,5 +1,9 @@
 # AF_Teste_Caixa_Branca_UIUX
 
+## Caixa Branca
+
+![Grafo de Fluxo](imagens/TesteCaixaBranca.png)
+
 ## Complexidade Ciclomática
 
 **Fórmula:** `M = E - N + 2P`, onde:
